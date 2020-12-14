@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "aaaatiwarishubaks2-1c77"
+    labels:
+        app: "aaaatiwarishubaks2-1c77"
+spec:
+    type: ClusterIP
+    ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+      name: http
+    selector:
+        app: "aaaatiwarishubaks2-1c77"
